@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:treasure_hunt/routes/routes.dart';
+import 'package:treasure_hunt/src/features/maps/map_view.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: Routes.getMapRoutes(),
+      home: const MapView(),
     );
   }
 }

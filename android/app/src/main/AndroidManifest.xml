@@ -3,6 +3,11 @@
         android:label="treasure_hunt"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+        <!-- TODO: Add your Google Maps API key here -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyCswqXbJYx6jRmJmwg6rFMJ6r12F7GjruU"/>
+               
         <activity
             android:name=".MainActivity"
             android:exported="true"
